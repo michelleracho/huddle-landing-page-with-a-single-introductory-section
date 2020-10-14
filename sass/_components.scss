@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  border: 1px solid teal;
+}
+
+.content {
+  border: 1px solid tomato;
+
+  @include flexCenter;
+
+  &__img-container {
+    border: 1px solid skyblue;
+  }
+
+  &__details {
+    border: 1px solid plum;
+  }
+
+  &__description {
+  }
+}
+
+.footer {
+  border: 1px solid teal;
+}
+
+// HEADINGS
+.heading {
+  font-family: $font-heading;
+
+  &--header {
+  }
+
+  &--main {
+  }
+}
+
+// BUTTON
+.cta {
+}
