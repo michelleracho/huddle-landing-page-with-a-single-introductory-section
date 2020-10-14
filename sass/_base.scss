@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
@@ -14,4 +17,5 @@ body {
   font-family: $font-body;
   line-height: 1.6;
   font-size: 1.6rem;
+  color: #fff;
 }
