@@ -18,7 +18,6 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   font-size: 1.6rem;
-  color: #fff;
 }
 
 .container {
@@ -31,13 +30,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 5rem;
   background: url(../images/bg-desktop.svg), #674baf;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
@@ -48,11 +46,8 @@ body {
   }
 }
 
-.header {
-  border: 1px solid teal;
-}
-
 .content {
+  padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,11 +60,24 @@ body {
 }
 
 .content__img-container {
-  border: 1px solid skyblue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content__img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content__details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 5rem;
 }
 
 .footer {
-  border: 1px solid teal;
   font-size: 2rem;
 }
 
@@ -113,11 +121,6 @@ body {
   font-weight: 700;
 }
 
-.heading--header {
-  font-size: 3rem;
-  letter-spacing: 1px;
-}
-
 .cta {
   font-size: 1.6rem;
   color: #674baf;
@@ -133,8 +136,8 @@ body {
 }
 
 .cta:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
   -webkit-box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
