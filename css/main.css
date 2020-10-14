@@ -44,6 +44,7 @@ body {
 @media only screen and (max-width: 375px) {
   .container {
     background: url(../images/bg-mobile.svg), #674baf;
+    background-repeat: no-repeat;
   }
 }
 
@@ -52,7 +53,6 @@ body {
 }
 
 .content {
-  border: 1px solid tomato;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,10 +66,6 @@ body {
 
 .content__img-container {
   border: 1px solid skyblue;
-}
-
-.content__details {
-  border: 1px solid plum;
 }
 
 .footer {
@@ -120,5 +116,26 @@ body {
 .heading--header {
   font-size: 3rem;
   letter-spacing: 1px;
+}
+
+.cta {
+  font-size: 1.6rem;
+  color: #674baf;
+  padding: 1rem 4.5rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,6 +13,7 @@
 
   @media only screen and (max-width: $bp-sm) {
     background: url(../images/bg-mobile.svg), $color-primary;
+    background-repeat: no-repeat;
   }
 }
 
@@ -21,7 +22,7 @@
 }
 
 .content {
-  border: 1px solid tomato;
+  // border: 1px solid tomato;
 
   @include flexCenter;
 
@@ -30,7 +31,7 @@
   }
 
   &__details {
-    border: 1px solid plum;
+    // border: 1px solid plum;
   }
 
   &__description {
@@ -79,4 +80,20 @@
 
 // BUTTON
 .cta {
+  font-size: 1.6rem;
+  // font-family: inherit;
+  color: $color-primary;
+  padding: 1rem 4.5rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.3);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    box-shadow: 0 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+  }
 }
