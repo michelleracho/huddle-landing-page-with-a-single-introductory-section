@@ -30,6 +30,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: url(../images/bg-desktop.svg), #674baf;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    background: url(../images/bg-mobile.svg), #674baf;
+    background-repeat: no-repeat;
+  }
 }
 
 .header {
