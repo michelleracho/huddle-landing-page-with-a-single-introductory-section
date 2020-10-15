@@ -1,5 +1,7 @@
 # Frontend Mentor - Huddle landing page with single introductory section
 
+* view project live [here](https://gallant-ride-79f198.netlify.app/)
+
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
