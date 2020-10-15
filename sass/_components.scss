@@ -14,11 +14,9 @@
 }
 
 .header {
-  // border: 1px solid teal;
 }
 
 .content {
-  // border: 1px solid tomato;
   padding-top: 5rem;
 
   @include flexCenter;
@@ -30,7 +28,6 @@
 
   &__img-container {
     flex: 1;
-    // border: 1px solid skyblue;
 
     img {
       width: 100%;
@@ -39,7 +36,6 @@
   }
 
   &__details {
-    // border: 1px solid plum;
     flex: 1;
     margin-left: 5rem;
     margin-top: 5rem;
@@ -57,18 +53,32 @@
   }
 
   &__description {
-    // font-size: 2rem;
     margin: 2rem auto;
   }
 }
 
 .footer {
-  // border: 1px solid teal;
   font-size: 2rem;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media only screen and (max-width: $bp-md-4) {
+    @include flexCenter;
+    flex-direction: column;
+  }
+
   &__list {
+    order: 2;
     @include flexCenter;
     justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-md-4) {
+      justify-content: center;
+      order: 1;
+      margin-bottom: 3rem;
+    }
   }
 
   &__item {
@@ -85,6 +95,22 @@
   }
 
   &__link {
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    order: 1;
+
+    @media only screen and (max-width: $bp-md-4) {
+      order: 2;
+    }
+
+    a {
+      color: hsl(228, 45%, 44%);
+      background-color: #fff;
+      border-radius: 3px;
+    }
   }
 }
 
